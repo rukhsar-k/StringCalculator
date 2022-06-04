@@ -3,7 +3,9 @@ package stringCalculator;
 public class Calculator {
 
 	public static int add(String num) {
-		return 0;
+		if(num.equals(""))
+			return 0;
+		else
+			return Integer.parseInt(num);
 	}
-	
 }
