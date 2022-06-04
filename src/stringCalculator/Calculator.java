@@ -14,8 +14,12 @@ public class Calculator {
 				input = input.substring(4);
 			}
 			
-			String numList[] = input.split(delimiter + "|\n");for(String currentNum : numList)
-			sum += stringToInt(currentNum);
+			String numList[] = input.split(delimiter + "|\n");
+			for(String currentNum : numList)
+				if(stringToInt(currentNum) < 0)
+					throw new IllegalArgumentException("Negatives not allowed");
+				else
+				sum += stringToInt(currentNum);
 			return sum;
 		}
 	}

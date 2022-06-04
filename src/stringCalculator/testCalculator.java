@@ -36,4 +36,13 @@ public class testCalculator {
     	assertEquals(3, Calculator.add("//;\n1;2"));
     }
 	
+	@Test
+    public void inputStringWithNegativeNum(){
+    	try {
+			Calculator.add("-1,2");
+		}
+		catch (IllegalArgumentException e){
+			assertEquals(e.getMessage(), "Negatives not allowed");
+		}
+    }
 }
