@@ -20,4 +20,10 @@ public class testCalculator {
 	public void twoInputStringSeparatedByComma(){
 		assertEquals(3, Calculator.add("1,2"));
 	}
+	
+	@Test
+    public void moreThanTwoInputStringSeparatedByComma(){
+    	assertEquals(6, Calculator.add("1,2,3"));
+    }
+
 }
