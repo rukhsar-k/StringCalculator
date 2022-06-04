@@ -15,4 +15,9 @@ public class testCalculator {
 	public void singleInputString() {
 		assertEquals(1, Calculator.add("1"));
 	}
+	
+	@Test
+	public void twoInputStringSeparatedByComma(){
+		assertEquals(3, Calculator.add("1,2"));
+	}
 }
