@@ -8,8 +8,6 @@ public class Calculator {
 		
 		if(input.equals(""))
 			return 0;
-		if(input.length() == 1)
-			return stringToInt(input);
 		else {
 			for(String currentNum : num)
 				sum += stringToInt(currentNum);

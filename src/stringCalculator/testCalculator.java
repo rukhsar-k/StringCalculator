@@ -30,5 +30,5 @@ public class testCalculator {
     public void inputStringWithNewLine(){
     	assertEquals(6, Calculator.add("1\n2,3"));
     }
-
+	
 }
